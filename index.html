@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #F8F8FF;
+      font-family: 'Open Sans', sans-serif;
+      color: #444444;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      color: #333333;
+    }
+
+    .jumbotron {
+      background-color: #5BC0DE;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>Welcome to Roza's Belly Button Biodiversity Dashboard! In this dashboard, you will be able to explore the bacterial data of each volunteer and identify the top 10 bacterial species in your own belly button. This is an exciting opportunity to contribute to the discovery of new bacterial species that could potentially be used in the manufacturing of synthetic beef by Improbable Beef.
+
+          To help Roza finish the dashboard, you will be working on four technical analysis deliverables. In Deliverable 1, you will create a Horizontal Bar Chart that will allow you to see the top 10 bacterial species present in your belly button. In Deliverable 2, you will create a Bubble Chart that will provide you with an overview of all the bacterial species present in your sample. Deliverable 3 will have you create a Gauge Chart that will help you understand how often you should be washing your belly button. Finally, in Deliverable 4, you will customize the dashboard to make it more user-friendly and visually appealing.
+          
+          We hope you enjoy exploring the fascinating world of belly button biodiversity and thank you for your contribution to this important research project.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="js/charts.js"></script>
+  
+  </body>
+  
+  </html>
